@@ -65,7 +65,6 @@ static NSString *idntify = @"webHead";
             NSString *allHtml = [NSString stringWithFormat:@"<html><body>%@%@<div style=\"margin:auto 8pt auto 16pt;\">%@</div></body></html>",titleHtml,timeHtml,html];
             dispatch_async(dispatch_get_main_queue(), ^{
                 [weakSelf.webView loadHTMLString:allHtml baseURL:RETIVE_URL];
-                NSLog(@"%@",allHtml);
             });
         } fail:^(NSString *errorMsg) {
             [weakSelf showErrorWithStatus:errorMsg];
@@ -73,7 +72,7 @@ static NSString *idntify = @"webHead";
     
     }else{
     [[DetailBiz bizInstant] requestDetail:@{@"content_id":_contentId} success:^(NSDictionary *responseObj) {
-        NSLog(@"re == %@",responseObj);
+//        NSLog(@"re == %@",responseObj);
         [weakSelf hiddenLoading];
         
         NSString *html = [responseObj[@"data"] objectForKey:@"TXT"];
