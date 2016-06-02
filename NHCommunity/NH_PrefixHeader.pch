@@ -1,0 +1,34 @@
+//
+//  NH_PrefixHeader.pch
+//  NHCommunity
+//
+//  Created by Arsenal on 15/8/22.
+//  Copyright (c) 2015年 ku. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifndef NHCommunity_NH_PrefixHeader_pch
+#define NHCommunity_NH_PrefixHeader_pch
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+
+#import "MJRefresh.h"
+    #import "Constant.h"
+    #import "StringUtil.h"  
+    #import "Util.h"
+    #import "AFNetworking.h"
+    #import "HttpManager.h"
+    #import "GlobalUtil.h"
+    #import "PPRevealSideViewController.h"
+    #import "SVProgressHUD.h"
+    #import "UIBarButtonItem+CTop.h"
+    #import "UIImageView+WebCache.h"
+    #import "NSString+Util.h"
+#import "SearchByCategorViewCtr.h"
+#import "UISearchBar+Enabler.h"
+#endif
+
+#endif

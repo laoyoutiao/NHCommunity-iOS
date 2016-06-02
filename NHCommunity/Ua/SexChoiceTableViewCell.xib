@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sex" id="KGk-i7-Jjw" customClass="SexChoiceTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="性别" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9BD-oc-roU">
+                        <rect key="frame" x="40" y="5" width="225" height="39"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5q-DH-epL">
+                        <rect key="frame" x="275" y="5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="lZO-Uo-s7a"/>
+                            <constraint firstAttribute="width" constant="40" id="unb-vb-Msr"/>
+                        </constraints>
+                        <state key="normal" image="sale_qa_show_icon.png"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9BD-oc-roU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="9Qx-Ro-ann"/>
+                    <constraint firstAttribute="trailing" secondItem="u5q-DH-epL" secondAttribute="trailing" constant="5" id="Fl5-hE-0E6"/>
+                    <constraint firstItem="u5q-DH-epL" firstAttribute="leading" secondItem="9BD-oc-roU" secondAttribute="trailing" constant="10" id="aln-il-dzN"/>
+                    <constraint firstItem="9BD-oc-roU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="c48-lp-fZP"/>
+                    <constraint firstItem="u5q-DH-epL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hOC-NL-nxM"/>
+                    <constraint firstAttribute="bottom" secondItem="9BD-oc-roU" secondAttribute="bottom" constant="5" id="hPa-dA-YbO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="choiceSexBtn" destination="u5q-DH-epL" id="WLa-l9-AJo"/>
+                <outlet property="sexInput" destination="9BD-oc-roU" id="1NU-Y0-5S9"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="sale_qa_show_icon.png" width="14" height="14"/>
+    </resources>
+</document>

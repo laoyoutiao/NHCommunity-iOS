@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="appmcell" id="qnu-9Z-XgW" customClass="ApplyMemberTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qnu-9Z-XgW" id="M8a-zG-gXg">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42R-oQ-7Un">
+                        <rect key="frame" x="296" y="11" width="14" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="14" id="aZv-vd-KPi"/>
+                        </constraints>
+                        <state key="normal" image="sale_qa_show_icon.png"/>
+                    </button>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z4t-XC-bfm">
+                        <rect key="frame" x="10" y="0.0" width="276" height="43"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="42R-oQ-7Un" firstAttribute="centerY" secondItem="M8a-zG-gXg" secondAttribute="centerY" id="0Ry-Mf-mGO"/>
+                    <constraint firstItem="42R-oQ-7Un" firstAttribute="leading" secondItem="z4t-XC-bfm" secondAttribute="trailing" constant="10" id="Xxm-Xg-jmZ"/>
+                    <constraint firstItem="z4t-XC-bfm" firstAttribute="leading" secondItem="M8a-zG-gXg" secondAttribute="leading" constant="10" id="Zap-ME-Qw8"/>
+                    <constraint firstAttribute="bottom" secondItem="z4t-XC-bfm" secondAttribute="bottom" id="j2a-A1-VZP"/>
+                    <constraint firstItem="z4t-XC-bfm" firstAttribute="top" secondItem="M8a-zG-gXg" secondAttribute="top" id="sXh-0V-2MN"/>
+                    <constraint firstAttribute="trailing" secondItem="42R-oQ-7Un" secondAttribute="trailing" constant="10" id="uVa-o6-ALe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="inputTxt" destination="z4t-XC-bfm" id="Nyi-vi-r5T"/>
+                <outlet property="rightBtn" destination="42R-oQ-7Un" id="fL6-OY-1zE"/>
+            </connections>
+            <point key="canvasLocation" x="393" y="272"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="sale_qa_show_icon.png" width="14" height="14"/>
+    </resources>
+</document>

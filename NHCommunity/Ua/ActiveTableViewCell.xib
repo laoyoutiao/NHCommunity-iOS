@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="activeCell" rowHeight="67" id="KGk-i7-Jjw" customClass="ActiveTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="扑克联谊大赛" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpe-vd-y2a">
+                        <rect key="frame" x="5" y="5" width="60" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="LlN-Wb-dzK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主办单位" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hie-ML-Msp">
+                        <rect key="frame" x="5" y="20" width="40" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="t59-t1-C97"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.43137254899999999" green="0.43137254899999999" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="活动地点" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MeZ-x8-rnA">
+                        <rect key="frame" x="5" y="35" width="40" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="VbW-FK-Vbd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.43137254899999999" green="0.43137254899999999" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="活动时间" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VR7-Wt-5AN">
+                        <rect key="frame" x="5" y="50" width="40" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="9Oc-Pm-tZa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.43137254899999999" green="0.43137254899999999" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUZ-Nt-alc">
+                        <rect key="frame" x="264" y="0.0" width="56" height="66"/>
+                        <color key="backgroundColor" red="0.98431372549999996" green="0.65490196079999996" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="56" id="uAa-Ke-DaL"/>
+                        </constraints>
+                        <state key="normal" title="详情">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bUZ-Nt-alc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tpe-vd-y2a" secondAttribute="trailing" constant="10" id="4hP-aa-hY6"/>
+                    <constraint firstItem="VR7-Wt-5AN" firstAttribute="top" secondItem="MeZ-x8-rnA" secondAttribute="bottom" constant="5" id="6fF-Mb-TAR"/>
+                    <constraint firstItem="bUZ-Nt-alc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="9B8-fL-gcS"/>
+                    <constraint firstItem="tpe-vd-y2a" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Bc1-Mn-pJf"/>
+                    <constraint firstItem="MeZ-x8-rnA" firstAttribute="top" secondItem="hie-ML-Msp" secondAttribute="bottom" constant="5" id="KHl-cU-Z19"/>
+                    <constraint firstItem="hie-ML-Msp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="LVl-Cd-Mgs"/>
+                    <constraint firstItem="tpe-vd-y2a" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="MZA-5S-MrA"/>
+                    <constraint firstItem="bUZ-Nt-alc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MeZ-x8-rnA" secondAttribute="trailing" constant="10" id="NPK-rw-7bV"/>
+                    <constraint firstItem="MeZ-x8-rnA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="XOM-7A-baR"/>
+                    <constraint firstAttribute="bottom" secondItem="bUZ-Nt-alc" secondAttribute="bottom" id="Zqj-23-pMw"/>
+                    <constraint firstAttribute="trailing" secondItem="bUZ-Nt-alc" secondAttribute="trailing" id="aV9-gz-wIz"/>
+                    <constraint firstItem="bUZ-Nt-alc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VR7-Wt-5AN" secondAttribute="trailing" constant="10" id="eei-Uv-OAO"/>
+                    <constraint firstItem="VR7-Wt-5AN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="maS-i5-Kgz"/>
+                    <constraint firstItem="bUZ-Nt-alc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hie-ML-Msp" secondAttribute="trailing" constant="10" id="udb-Dq-Sll"/>
+                    <constraint firstItem="hie-ML-Msp" firstAttribute="top" secondItem="tpe-vd-y2a" secondAttribute="bottom" constant="5" id="wC4-ur-jUc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="VR7-Wt-5AN" id="yMT-g4-z23"/>
+                <outlet property="headTitleLabel" destination="tpe-vd-y2a" id="NZ1-uZ-Wta"/>
+                <outlet property="orgLabel" destination="hie-ML-Msp" id="4gU-7z-rTS"/>
+                <outlet property="siteLabel" destination="MeZ-x8-rnA" id="yJx-bL-59h"/>
+            </connections>
+            <point key="canvasLocation" x="175" y="267.5"/>
+        </tableViewCell>
+    </objects>
+</document>
