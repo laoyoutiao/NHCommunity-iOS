@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KDJ-tC-ulj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KDJ-tC-ulj">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -209,10 +209,10 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="confirmBtn" destination="tOl-Sd-aqH" id="DGb-OW-8Rw"/>
-                        <outlet property="email" destination="MEB-cw-t0s" id="G9J-Nj-BUw"/>
-                        <outlet property="phoneTxfiel" destination="Q73-A3-7qs" id="ZV7-Dd-rUv"/>
-                        <outlet property="pwd" destination="Fav-4O-6hl" id="a6G-79-O2d"/>
-                        <outlet property="surepwd" destination="HVZ-Vg-a3y" id="HMd-JE-oN0"/>
+                        <outlet property="email" destination="Fav-4O-6hl" id="HNw-9s-UfE"/>
+                        <outlet property="phoneTxfiel" destination="HVZ-Vg-a3y" id="ZSe-Vo-SOz"/>
+                        <outlet property="pwd" destination="MEB-cw-t0s" id="CVy-fa-S6a"/>
+                        <outlet property="surepwd" destination="Q73-A3-7qs" id="ggd-mD-ktX"/>
                         <outlet property="userName" destination="fas-NC-pqu" id="fdL-Xu-vFm"/>
                     </connections>
                 </tableViewController>
